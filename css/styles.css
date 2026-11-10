@@ -422,6 +422,13 @@ p {
   background-size: cover;
 }
 
+.pub .pub-lead {
+  margin: 0 0 1rem;
+  font-size: 1.15rem;
+  color: var(--ink);
+  font-weight: 700;
+}
+
 .pub .split-media {
   background-image: url("https://media.cwd-cdn.com/beaver-and-bulldog/images/big-screen.jpg");
 }
