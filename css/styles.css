@@ -1179,6 +1179,18 @@ a:focus-visible {
   font-size: 0.95rem;
 }
 
+.site-footer .footer-email {
+  margin: 0 0 0.65rem;
+}
+
+.site-footer .footer-email a {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: var(--gold);
+}
+
 @media (max-width: 1100px) {
   .specials {
     grid-template-columns: repeat(2, 1fr);
