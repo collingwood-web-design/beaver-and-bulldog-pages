@@ -860,27 +860,35 @@ p {
 }
 
 .special {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   background: #333;
   padding: 1.25rem 1.2rem 1.4rem;
   border-top: 3px solid var(--gold);
   text-align: center;
 }
 
-.special-star {
+.special-star,
+.special-chicken {
   display: grid;
   place-items: center;
-  width: 4rem;
-  height: 4rem;
-  margin: 0 auto 0.85rem;
-}
-
-.special-chicken {
-  display: block;
   width: 100%;
   height: 4.5rem;
   margin: 0 0 0.85rem;
-  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.special-star svg {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  overflow: visible;
+}
+
+.special-chicken {
   position: relative;
+  overflow: hidden;
 }
 
 .special-chicken img {
@@ -900,13 +908,6 @@ p {
   to {
     left: 100%;
   }
-}
-
-.special-star svg {
-  display: block;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
 }
 
 .special-ring-track,
@@ -1347,9 +1348,25 @@ a:focus-visible {
 }
 
 .menu-note-gw {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   margin-top: 1.2rem;
   color: #666;
   font-size: 0.92rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.menu-note-gw-top {
+  margin: 0 auto 1.35rem;
+  max-width: 40rem;
+  justify-content: center;
+}
+
+.menu-note-gw .menu-gw {
+  margin-left: 0;
+  flex-shrink: 0;
 }
 
 .menu-items {
@@ -1499,6 +1516,44 @@ a:focus-visible {
 .drink-table td {
   white-space: nowrap;
   font-weight: 700;
+}
+
+/* Price columns share one right edge with drink lists */
+.drink-table thead th:not(:first-child),
+.drink-table td {
+  text-align: right;
+}
+
+.drink-table th:last-child,
+.drink-table td:last-child {
+  padding-right: 0;
+}
+
+/* Keep White / Red wine price columns on the same grid */
+.drink-table-wine {
+  table-layout: fixed;
+}
+
+.drink-table-wine th[scope="row"] {
+  width: 48%;
+  white-space: normal;
+  font-weight: 400;
+  text-align: left;
+}
+
+.drink-table-wine thead th:nth-child(2),
+.drink-table-wine thead th:nth-child(3),
+.drink-table-wine td:nth-child(2),
+.drink-table-wine td:nth-child(3) {
+  width: 5.75rem;
+  text-align: right;
+}
+
+.drink-table-wine thead th:nth-child(4),
+.drink-table-wine td:nth-child(4) {
+  width: 9.75rem;
+  text-align: right;
+  white-space: normal;
 }
 
 .drink-tier {
