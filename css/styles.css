@@ -875,17 +875,31 @@ p {
 }
 
 .special-chicken {
-  display: grid;
-  place-items: center;
-  width: 4.5rem;
+  display: block;
+  width: 100%;
   height: 4.5rem;
-  margin: 0 auto 0.85rem;
+  margin: 0 0 0.85rem;
+  overflow: hidden;
+  position: relative;
 }
 
 .special-chicken img {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -4.5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   object-fit: contain;
+  animation: special-chicken-run 9s linear infinite;
+}
+
+@keyframes special-chicken-run {
+  from {
+    left: -4.5rem;
+  }
+  to {
+    left: 100%;
+  }
 }
 
 .special-star svg {
@@ -974,6 +988,12 @@ p {
   .special-star-shape {
     opacity: 1;
     transform: none;
+    animation: none;
+  }
+
+  .special-chicken img {
+    left: 50%;
+    transform: translateX(-50%);
     animation: none;
   }
 }
@@ -1312,6 +1332,18 @@ a:focus-visible {
   margin: 0 0 1rem;
   color: var(--gold-deep);
   font-size: 0.98rem;
+}
+
+.menu-note a {
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid var(--gold);
+}
+
+.menu-note a:hover,
+.menu-note a:focus-visible {
+  color: var(--gold-deep);
 }
 
 .menu-note-gw {
