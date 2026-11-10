@@ -478,6 +478,30 @@ p {
   object-fit: cover;
 }
 
+.reviews-intro {
+  background: var(--paper);
+  padding: 2.4rem 1.25rem 1.6rem;
+  text-align: center;
+}
+
+.reviews-intro-inner {
+  max-width: var(--wrap);
+  margin: 0 auto;
+}
+
+.reviews-intro h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.reviews-intro p {
+  margin: 0.75rem auto 0;
+  max-width: 36rem;
+  color: var(--text);
+}
+
 .review-feature {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
@@ -529,16 +553,17 @@ p {
 
 .google-reviews {
   background: var(--cream);
-  padding: 1rem 1.25rem 3.5rem;
+  padding: 1.5rem 1.25rem 3.5rem;
 }
 
 .google-reviews-inner {
   max-width: var(--wrap);
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 1.5rem;
-  align-items: start;
+}
+
+.google-reviews-inner.trustindex-embed {
+  display: block;
+  min-height: 280px;
 }
 
 .google-summary {
