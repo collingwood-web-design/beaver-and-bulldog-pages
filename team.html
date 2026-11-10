@@ -3,17 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Team - Beaver &amp; Bulldog, Collingwood</title>
-  <meta name="description" content="Meet the Beaver &amp; Bulldog team in Collingwood — owners, managers, hosts, servers, and the kitchen crew behind our wings and features.">
+  <title>Our Team | Beaver &amp; Bulldog Sports Pub Collingwood</title>
+  <meta name="description" content="Meet the Beaver &amp; Bulldog team in Collingwood — owner Brandon Biggs, managers, hosts, servers, and the kitchen crew behind our famous jumbo wings.">
+  <meta name="geo.region" content="CA-ON">
+  <meta name="geo.placename" content="Collingwood, Ontario">
   <link rel="canonical" href="https://beaverandbulldogcollingwood.com/team">
+  <link rel="alternate" type="text/plain" title="LLM context" href="llms.txt">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Team - Beaver &amp; Bulldog, Collingwood">
-  <meta property="og:description" content="Meet the Beaver &amp; Bulldog team in Collingwood — owners, managers, hosts, servers, and the kitchen crew behind our wings and features.">
+  <meta property="og:site_name" content="Beaver &amp; Bulldog">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:title" content="Our Team | Beaver &amp; Bulldog Sports Pub Collingwood">
+  <meta property="og:description" content="Meet the Beaver &amp; Bulldog team in Collingwood — owner Brandon Biggs, managers, hosts, servers, and the kitchen crew behind our famous jumbo wings.">
   <meta property="og:url" content="https://beaverandbulldogcollingwood.com/team">
   <meta property="og:image" content="https://media.cwd-cdn.com/beaver-and-bulldog/images/team-top-picks.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Team - Beaver &amp; Bulldog, Collingwood">
-  <meta name="twitter:description" content="Meet the Beaver &amp; Bulldog team in Collingwood — owners, managers, hosts, servers, and the kitchen crew behind our wings and features.">
+  <meta name="twitter:title" content="Our Team | Beaver &amp; Bulldog Sports Pub Collingwood">
+  <meta name="twitter:description" content="Meet the Beaver &amp; Bulldog team in Collingwood — owner Brandon Biggs, managers, hosts, servers, and the kitchen crew behind our famous jumbo wings.">
   <meta name="twitter:image" content="https://media.cwd-cdn.com/beaver-and-bulldog/images/team-top-picks.jpg">
   <link rel="icon" href="https://media.cwd-cdn.com/beaver-and-bulldog/images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,22 +40,32 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BarOrPub",
-    "name": "Beaver & Bulldog",
-    "url": "https://beaverandbulldogcollingwood.com/",
-    "image": "https://media.cwd-cdn.com/beaver-and-bulldog/images/hero.jpg",
-    "telephone": "+1-705-446-9711",
-    "servesCuisine": "Pub",
-    "description": "Beaver & Bulldog bringing together a truly inspired menu and a dash of local colour in an innovative Sports Pub & Wingery.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "195 First St",
-      "addressLocality": "Collingwood",
-      "addressRegion": "ON",
-      "postalCode": "L9Y 1A6",
-      "addressCountry": "CA"
-    },
-    "openingHours": "Mo-Su 11:00-23:00"
+    "@graph": [
+      {
+        "@type": ["BarOrPub", "Restaurant"],
+        "@id": "https://beaverandbulldogcollingwood.com/#business",
+        "name": "Beaver & Bulldog",
+        "url": "https://beaverandbulldogcollingwood.com/",
+        "telephone": "+1-705-446-9711",
+        "image": "https://media.cwd-cdn.com/beaver-and-bulldog/images/team-top-picks.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "195 First St",
+          "addressLocality": "Collingwood",
+          "addressRegion": "ON",
+          "postalCode": "L9Y 1A6",
+          "addressCountry": "CA"
+        },
+        "founder": {"@type": "Person", "name": "Brandon Biggs"}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://beaverandbulldogcollingwood.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Team", "item": "https://beaverandbulldogcollingwood.com/team"}
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -73,6 +88,7 @@
         <li><a href="reviews">Reviews</a></li>
         <li><a href="team" aria-current="page">Team</a></li>
         <li><a href="social-gallery">Social Gallery</a></li>
+        <li><a href="faq">FAQ</a></li>
         <li><a href="#visit">Contact Us</a></li>
       </ul>
     </nav>
@@ -184,6 +200,7 @@
         <li><a href="reviews">Reviews</a></li>
         <li><a href="team" aria-current="page">Team</a></li>
         <li><a href="social-gallery">Social Gallery</a></li>
+        <li><a href="faq">FAQ</a></li>
         <li><a href="#visit">Contact Us</a></li>
       </ul>
     </nav>
@@ -202,10 +219,32 @@
     setHeaderHeight();
     window.addEventListener("resize", setHeaderHeight);
 
+    function closeNav() {
+      nav.classList.remove("is-open");
+      toggle.setAttribute("aria-expanded", "false");
+      setHeaderHeight();
+    }
+
     toggle.addEventListener("click", function () {
       var open = nav.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
       setHeaderHeight();
+    });
+
+    nav.addEventListener("click", function (e) {
+      var link = e.target.closest("a");
+      if (!link) return;
+      var href = link.getAttribute("href") || "";
+      closeNav();
+      if (href.charAt(0) !== "#") return;
+      var target = document.getElementById(href.slice(1));
+      if (!target) return;
+      e.preventDefault();
+      window.requestAnimationFrame(function () {
+        setHeaderHeight();
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        if (history.replaceState) history.replaceState(null, "", href);
+      });
     });
   </script>
 </body>

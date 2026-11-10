@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://beaverandbulldogcollingwood.com/sitemap.xml
+
+# LLM / AEO context
+# https://beaverandbulldogcollingwood.com/llms.txt

@@ -3,17 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home - Beaver &amp; Bulldog, Collingwood</title>
-  <meta name="description" content="Beaver &amp; Bulldog bringing together a truly inspired menu and a dash of local colour in an innovative Sports Pub &amp; Wingery.">
+  <title>Best Wings in Collingwood | Beaver &amp; Bulldog Sports Pub &amp; Wingery</title>
+  <meta name="description" content="Beaver &amp; Bulldog — Collingwood sports pub &amp; wingery famous for jumbo buffalo wings, cold beer, big screens and patio dining. Open 7 days. Serving Blue Mountains, Wasaga Beach and South Georgian Bay.">
+  <meta name="keywords" content="best wings in Collingwood, Collingwood wings, sports pub Collingwood, Beaver and Bulldog, Blue Mountains restaurant, Wasaga Beach wings, patio Collingwood, takeout Collingwood">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="Beaver &amp; Bulldog">
+  <meta name="geo.region" content="CA-ON">
+  <meta name="geo.placename" content="Collingwood, Ontario">
+  <meta name="geo.position" content="44.502615;-80.223292">
+  <meta name="ICBM" content="44.502615, -80.223292">
   <link rel="canonical" href="https://beaverandbulldogcollingwood.com/">
+  <link rel="alternate" type="text/plain" title="LLM context" href="llms.txt">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Home - Beaver &amp; Bulldog, Collingwood">
-  <meta property="og:description" content="Beaver &amp; Bulldog bringing together a truly inspired menu and a dash of local colour in an innovative Sports Pub &amp; Wingery.">
+  <meta property="og:site_name" content="Beaver &amp; Bulldog">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:title" content="Best Wings in Collingwood | Beaver &amp; Bulldog Sports Pub &amp; Wingery">
+  <meta property="og:description" content="Collingwood sports pub &amp; wingery famous for jumbo buffalo wings, cold beer, big screens and patio dining. Open 7 days. Serving Blue Mountains, Wasaga Beach and South Georgian Bay.">
   <meta property="og:url" content="https://beaverandbulldogcollingwood.com/">
   <meta property="og:image" content="https://media.cwd-cdn.com/beaver-and-bulldog/images/hero.jpg">
+  <meta property="og:image:alt" content="Beaver &amp; Bulldog Sports Pub and Wingery in Collingwood, Ontario">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Home - Beaver &amp; Bulldog, Collingwood">
-  <meta name="twitter:description" content="Beaver &amp; Bulldog bringing together a truly inspired menu and a dash of local colour in an innovative Sports Pub &amp; Wingery.">
+  <meta name="twitter:title" content="Best Wings in Collingwood | Beaver &amp; Bulldog Sports Pub &amp; Wingery">
+  <meta name="twitter:description" content="Collingwood sports pub &amp; wingery famous for jumbo buffalo wings, cold beer, big screens and patio dining. Open 7 days.">
   <meta name="twitter:image" content="https://media.cwd-cdn.com/beaver-and-bulldog/images/hero.jpg">
   <link rel="icon" href="https://media.cwd-cdn.com/beaver-and-bulldog/images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,22 +46,89 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BarOrPub",
-    "name": "Beaver & Bulldog",
-    "url": "https://beaverandbulldogcollingwood.com/",
-    "image": "https://media.cwd-cdn.com/beaver-and-bulldog/images/hero.jpg",
-    "telephone": "+1-705-446-9711",
-    "servesCuisine": "Pub",
-    "description": "Beaver & Bulldog bringing together a truly inspired menu and a dash of local colour in an innovative Sports Pub & Wingery.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "195 First St",
-      "addressLocality": "Collingwood",
-      "addressRegion": "ON",
-      "postalCode": "L9Y 1A6",
-      "addressCountry": "CA"
-    },
-    "openingHours": "Mo-Su 11:00-23:00"
+    "@graph": [
+      {
+        "@type": ["BarOrPub", "Restaurant"],
+        "@id": "https://beaverandbulldogcollingwood.com/#business",
+        "name": "Beaver & Bulldog",
+        "alternateName": ["Beaver and Bulldog", "Beaver & Bulldog Sports Pub & Wingery", "B&B Collingwood"],
+        "url": "https://beaverandbulldogcollingwood.com/",
+        "image": [
+          "https://media.cwd-cdn.com/beaver-and-bulldog/images/hero.jpg",
+          "https://media.cwd-cdn.com/beaver-and-bulldog/images/patio.jpg"
+        ],
+        "logo": "https://media.cwd-cdn.com/beaver-and-bulldog/images/logo.png",
+        "telephone": "+1-705-446-9711",
+        "priceRange": "$$",
+        "servesCuisine": ["Pub", "Canadian", "Wings", "Sports Bar"],
+        "description": "Sports pub and wingery in Collingwood, Ontario known for fresh jumbo buffalo wings, local and imported beers, big screens, patio dining, and takeout. A favourite stop for guests from The Blue Mountains, Wasaga Beach, Thornbury, Stayner and South Georgian Bay.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "195 First St",
+          "addressLocality": "Collingwood",
+          "addressRegion": "ON",
+          "postalCode": "L9Y 1A6",
+          "addressCountry": "CA"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 44.502615,
+          "longitude": -80.223292
+        },
+        "hasMap": "https://maps.google.com/?q=195+First+St,+Collingwood,+ON+L9Y+1A6",
+        "hasMenu": "https://beaverandbulldogcollingwood.com/menu",
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "11:00",
+          "closes": "23:00"
+        },
+        "areaServed": [
+          {"@type": "City", "name": "Collingwood"},
+          {"@type": "City", "name": "The Blue Mountains"},
+          {"@type": "City", "name": "Wasaga Beach"},
+          {"@type": "City", "name": "Thornbury"},
+          {"@type": "City", "name": "Stayner"},
+          {"@type": "City", "name": "Clearview"},
+          {"@type": "AdministrativeArea", "name": "South Georgian Bay"}
+        ],
+        "sameAs": [
+          "https://www.facebook.com/BeaverAndBullDogSportsBarAndWingery/",
+          "https://www.instagram.com/collingwoodbeaverandbulldog/",
+          "https://www.tripadvisor.ca/Restaurant_Review-g181754-d981618-Reviews-Beaver_and_Bulldog_Sports_Pub_and_Wingery-Collingwood_Ontario.html"
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.4",
+          "reviewCount": "1409",
+          "bestRating": "5"
+        },
+        "knowsAbout": [
+          "best wings in Collingwood",
+          "jumbo buffalo wings",
+          "Collingwood sports pub",
+          "patio dining Collingwood"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://beaverandbulldogcollingwood.com/#website",
+        "url": "https://beaverandbulldogcollingwood.com/",
+        "name": "Beaver & Bulldog",
+        "description": "Beaver & Bulldog Sports Pub & Wingery — best wings in Collingwood, Ontario.",
+        "publisher": {"@id": "https://beaverandbulldogcollingwood.com/#business"},
+        "inLanguage": "en-CA"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://beaverandbulldogcollingwood.com/#webpage",
+        "url": "https://beaverandbulldogcollingwood.com/",
+        "name": "Best Wings in Collingwood | Beaver & Bulldog Sports Pub & Wingery",
+        "isPartOf": {"@id": "https://beaverandbulldogcollingwood.com/#website"},
+        "about": {"@id": "https://beaverandbulldogcollingwood.com/#business"},
+        "inLanguage": "en-CA"
+      }
+    ]
   }
   </script>
 </head>
@@ -73,13 +151,14 @@
         <li><a href="reviews">Reviews</a></li>
         <li><a href="team">Team</a></li>
         <li><a href="social-gallery">Social Gallery</a></li>
+        <li><a href="faq">FAQ</a></li>
         <li><a href="#visit">Contact Us</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="main">
-    <h1 class="visually-hidden">Beaver &amp; Bulldog, Collingwood</h1>
+    <h1 class="visually-hidden">Best Wings in Collingwood — Beaver &amp; Bulldog Sports Pub &amp; Wingery</h1>
 
     <div class="hero-stack">
     <section class="hero" aria-label="The pub on First Street">
@@ -90,12 +169,12 @@
     <section class="hours-bar" id="hours">
       <p>OPEN 7 DAYS A WEEK</p>
       <p>11am-11pm</p>
-      <p>Call For Takeout <a href="tel:7054469711">705-446-9711</a><br>Cheers!</p>
+      <p>Call For Takeout <a class="hours-phone" href="tel:7054469711">705-446-9711</a><br>Cheers!</p>
     </section>
 
     <section class="welcome">
       <img class="wordmark" src="https://media.cwd-cdn.com/beaver-and-bulldog/images/wordmark.png" alt="Beaver and Bulldog Sports Pub and Wingery, Collingwood">
-      <p class="lede">Please stop by for tantalizing food, fabulous drinks and memorable times.</p>
+      <p class="lede">Please stop by for tantalizing food, fabulous drinks and memorable times — Collingwood’s home for jumbo wings, cold beer, and big-screen sports.</p>
       <div class="stats">
         <article class="stat">
           <div class="stat-ring" data-count="25">
@@ -184,9 +263,9 @@
       <div class="split">
         <div class="split-media" role="img" aria-label="Jumbo buffalo wings"></div>
         <div class="split-copy">
-          <h2>Passion</h2>
-          <p>Our quintessential Canadian Beaver has blended recipes and designs with our loyal British Bulldog together in a splendid selection of signature flavours and Canadian favorites, infused with British flair. Take special note of our world famous fresh jumbo buffalo wings, fresh fish, Canadian beef and our many local fresh market selections, all of which are seasoned to perfection by our talented Kitchen team that each add a personal touch and an abundance of passion.</p>
-          <a class="btn" href="menu">Menu</a>
+          <h2>Best Wings in Collingwood</h2>
+          <p>Our quintessential Canadian Beaver has blended recipes and designs with our loyal British Bulldog together in a splendid selection of signature flavours and Canadian favorites, infused with British flair. Take special note of our world famous fresh jumbo buffalo wings — 25 flavours that keep locals and visitors from Blue Mountains and Wasaga Beach coming back — plus fresh fish, Canadian beef and our many local fresh market selections, all seasoned to perfection by our talented Kitchen team.</p>
+          <a class="btn" href="menu#wings">Wing Menu</a>
         </div>
       </div>
     </section>
@@ -270,6 +349,17 @@
       </div>
     </section>
 
+    <section class="service-area" aria-labelledby="area-heading">
+      <div class="visit-inner">
+        <h2 id="area-heading">Serving Collingwood &amp; South Georgian Bay</h2>
+        <p>Looking for the best wings in Collingwood? Beaver &amp; Bulldog is the sports pub and wingery on First Street — famous jumbo buffalo wings, cold beer, big screens, and a patio when the weather cooperates. We’re a favourite stop for guests from <strong>The Blue Mountains</strong>, <strong>Wasaga Beach</strong>, <strong>Thornbury</strong>, <strong>Stayner</strong>, <strong>Clearview</strong>, and across South Georgian Bay.</p>
+        <div class="service-area-actions">
+          <a class="btn" href="faq">FAQ</a>
+          <a class="btn" href="menu">Full Menu</a>
+        </div>
+      </div>
+    </section>
+
     <section class="visit" id="visit">
       <div class="visit-inner visit-grid">
         <div>
@@ -312,6 +402,7 @@
         <li><a href="reviews">Reviews</a></li>
         <li><a href="team">Team</a></li>
         <li><a href="social-gallery">Social Gallery</a></li>
+        <li><a href="faq">FAQ</a></li>
         <li><a href="#visit">Contact Us</a></li>
       </ul>
     </nav>
@@ -330,10 +421,32 @@
     setHeaderHeight();
     window.addEventListener("resize", setHeaderHeight);
 
+    function closeNav() {
+      nav.classList.remove("is-open");
+      toggle.setAttribute("aria-expanded", "false");
+      setHeaderHeight();
+    }
+
     toggle.addEventListener("click", function () {
       var open = nav.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
       setHeaderHeight();
+    });
+
+    nav.addEventListener("click", function (e) {
+      var link = e.target.closest("a");
+      if (!link) return;
+      var href = link.getAttribute("href") || "";
+      closeNav();
+      if (href.charAt(0) !== "#") return;
+      var target = document.getElementById(href.slice(1));
+      if (!target) return;
+      e.preventDefault();
+      window.requestAnimationFrame(function () {
+        setHeaderHeight();
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        if (history.replaceState) history.replaceState(null, "", href);
+      });
     });
 
     var welcomeVideo = document.querySelector(".welcome-video");
