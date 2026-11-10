@@ -25,7 +25,9 @@
       if (window.location.protocol === "file:") {
         root = new URL("./", window.location.href).href;
       } else if (/\.github\.io$/i.test(window.location.hostname)) {
-        root = window.location.origin + "/beaver-and-bulldog/";
+        var parts = window.location.pathname.split("/").filter(Boolean);
+        var repo = parts.length ? parts[0] : "";
+        root = window.location.origin + (repo ? "/" + repo + "/" : "/");
       } else {
         root = window.location.origin + "/";
       }
