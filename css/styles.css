@@ -2157,25 +2157,3 @@ a:focus-visible {
   border-color: #fff;
 }
 
-.service-area {
-  background: var(--paper);
-  padding: 3rem 0;
-}
-
-.service-area h2 {
-  margin: 0 0 0.85rem;
-  text-transform: uppercase;
-  color: var(--ink);
-}
-
-.service-area p {
-  max-width: 46rem;
-}
-
-.service-area-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1.25rem;
-}
-
