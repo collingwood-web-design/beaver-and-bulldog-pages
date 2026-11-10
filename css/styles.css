@@ -1923,7 +1923,7 @@ a:focus-visible {
 
 .page-faq {
   background:
-    linear-gradient(180deg, rgba(226, 212, 192, 0.55) 0, rgba(226, 212, 192, 0.55) 18rem, #fff 18rem);
+    linear-gradient(180deg, rgba(226, 212, 192, 0.55) 0, rgba(226, 212, 192, 0.35) 14rem, #fff 22rem);
 }
 
 .faq-inner {
@@ -1933,7 +1933,7 @@ a:focus-visible {
 }
 
 .faq-intro {
-  padding: 2.6rem 0 1.5rem;
+  padding: 2.6rem 0 2rem;
   text-align: center;
 }
 
@@ -1959,26 +1959,35 @@ a:focus-visible {
   color: var(--text);
 }
 
+.faq-lead + .faq-lead {
+  margin-top: 0.65rem;
+}
+
 .faq-lead a {
   color: var(--ink);
   font-weight: 700;
 }
 
 .faq-list {
-  padding: 0.5rem 0 2.5rem;
+  padding: 1.75rem 0 2.75rem;
 }
 
 .faq-group {
-  margin: 0 0 2rem;
+  margin: 0 0 2.75rem;
+}
+
+.faq-group + .faq-group {
+  margin-top: 0.5rem;
+  padding-top: 0.75rem;
 }
 
 .faq-group h2 {
-  margin: 0 0 0.85rem;
+  margin: 0 0 1.15rem;
   font-size: clamp(1.35rem, 3vw, 1.7rem);
   text-transform: uppercase;
   color: var(--ink);
   border-bottom: 2px solid var(--gold);
-  padding-bottom: 0.4rem;
+  padding-bottom: 0.55rem;
 }
 
 .faq {
