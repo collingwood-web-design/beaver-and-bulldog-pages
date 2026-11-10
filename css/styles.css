@@ -103,6 +103,23 @@ p {
   margin: 0 auto;
 }
 
+.header-call {
+  display: inline-block;
+  margin: 0.15rem 1rem 0.55rem;
+  color: var(--gold);
+  font-family: var(--font-display);
+  font-size: 0.98rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.header-call:hover,
+.header-call:focus-visible {
+  border-bottom-color: var(--gold);
+}
+
 .nav-toggle {
   display: none;
   margin: 0.4rem 1rem 0.8rem;
