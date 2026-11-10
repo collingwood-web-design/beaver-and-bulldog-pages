@@ -1968,12 +1968,37 @@ a:focus-visible {
   font-weight: 700;
 }
 
+.faq-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 0.75rem;
+  justify-content: center;
+  margin: 1.5rem 0 0;
+}
+
+.faq-jump a {
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ink);
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 0.1rem;
+}
+
+.faq-jump a:hover,
+.faq-jump a:focus-visible {
+  color: var(--gold-deep);
+}
+
 .faq-list {
   padding: 1.75rem 0 2.75rem;
 }
 
 .faq-group {
   margin: 0 0 2.75rem;
+  scroll-margin-top: calc(var(--header) + 1rem);
 }
 
 .faq-group + .faq-group {
