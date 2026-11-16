@@ -999,6 +999,12 @@ p {
   overflow: hidden;
 }
 
+.special-flavour .special-chicken {
+  width: calc(100% + 2.4rem);
+  max-width: none;
+  margin: 0 -1.2rem 0.85rem;
+}
+
 .special-chicken img {
   position: absolute;
   top: 0;
