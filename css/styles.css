@@ -1180,6 +1180,39 @@ p {
   color: #f6ac25;
 }
 
+.visit-feature {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.85rem;
+  background: #fff;
+  border: 2px solid #f6ac25;
+  text-decoration: none;
+  color: var(--ink);
+  max-width: 16rem;
+}
+
+.visit-feature:hover,
+.visit-feature:focus-visible {
+  background: #fff8eb;
+}
+
+.visit-feature-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 0.7rem;
+}
+
+.visit-feature-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+  line-height: 1.35;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
 button:focus-visible,
 a:focus-visible {
   outline: 2px solid var(--gold);
