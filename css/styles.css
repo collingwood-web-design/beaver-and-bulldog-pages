@@ -886,6 +886,11 @@ p {
   text-decoration: none;
 }
 
+.hours-banner .hours-menu-btn {
+  margin-top: 1.35rem;
+  color: var(--ink);
+}
+
 .plates {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
