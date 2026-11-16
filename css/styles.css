@@ -1094,7 +1094,9 @@ p {
 .visit-grid {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
-  gap: 2.5rem;
+  column-gap: 2.5rem;
+  row-gap: 1.35rem;
+  align-items: start;
 }
 
 .visit h2 {
@@ -1112,10 +1114,16 @@ p {
 }
 
 .visit-map {
-  margin-top: 1.35rem;
+  margin-top: 0;
   aspect-ratio: 4 / 3;
   overflow: hidden;
   background: #1a1a1a;
+}
+
+.visit-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .visit-map iframe {
@@ -1137,7 +1145,7 @@ p {
 
 .visit-reviews {
   display: block;
-  margin-top: 1.75rem;
+  margin-top: 0;
   padding: 1.1rem 1.15rem 1.2rem;
   border: 2px solid #f6ac25;
   text-decoration: none;
@@ -1182,7 +1190,7 @@ p {
 
 .visit-feature {
   display: block;
-  margin-top: 1rem;
+  margin-top: 0;
   padding: 0.85rem;
   background: #fff;
   border: 2px solid #f6ac25;
