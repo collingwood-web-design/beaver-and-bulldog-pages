@@ -496,7 +496,7 @@ p {
 .pub-cantake {
   display: inline-flex;
   align-items: center;
-  background: #000;
+  background: #fff;
   padding: 0.55rem 0.75rem;
   max-width: 14rem;
 }
