@@ -1135,6 +1135,51 @@ p {
   display: inline-flex;
 }
 
+.visit-reviews {
+  display: block;
+  margin-top: 1.75rem;
+  padding: 1.1rem 1.15rem 1.2rem;
+  border: 2px solid #f6ac25;
+  text-decoration: none;
+  color: #fff;
+  max-width: 16rem;
+}
+
+.visit-reviews:hover,
+.visit-reviews:focus-visible {
+  background: rgba(246, 172, 37, 0.12);
+}
+
+.visit-reviews-google {
+  display: block;
+  width: 90px;
+  height: auto;
+  margin-bottom: 0.55rem;
+  filter: brightness(0) invert(1);
+}
+
+.visit-reviews-stars {
+  margin: 0;
+  color: #f6ac25;
+  letter-spacing: 0.12em;
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.visit-reviews-score {
+  margin: 0.45rem 0 0;
+  font-size: 0.98rem;
+}
+
+.visit-reviews-cta {
+  margin: 0.55rem 0 0;
+  font-family: var(--font-display);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.88rem;
+  color: #f6ac25;
+}
+
 button:focus-visible,
 a:focus-visible {
   outline: 2px solid var(--gold);
